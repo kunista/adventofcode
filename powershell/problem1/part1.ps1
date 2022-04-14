@@ -48,3 +48,4 @@ foreach ($char in $charArray) {
     }
 }
 $i
+
