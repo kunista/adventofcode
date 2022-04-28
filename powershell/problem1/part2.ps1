@@ -24,17 +24,17 @@ param(
     [String] $Directions
 )
 $charArray = $Directions.ToCharArray()
-$a = 0
+$floor = 0
 $position = 0
 $i = 0
 foreach ($char in $charArray) {
     if ($char -eq "(" ) {
-        $a++
+        $floor++
     }
     else {
-        $a--
+        $floor--
     }
-    if ($a -lt 0) {
+    if ($floor -lt 0) {
         $position = $i + 1
         break
     }
